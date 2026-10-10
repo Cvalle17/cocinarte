@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ===== PLANTILLA BASE DE COCINARTE =====
+         Copiar este archivo para crear cada página nueva del sitio.
+         Solo se cambia: <title>, la descripción, el banner y el contenido de <main> y <aside>. -->
+
+    <!-- ===== INFORMACIÓN DE LA PÁGINA ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página.">
+    <title>CocinArte | Menu y Paquetes</title>
+
+    <link rel="stylesheet" href="SiteStyle/global.css">
+</head>
+<body>
+
+    <header>
+
+        <div id="logo">
+            <a href="index.html">
+                <img src="SiteImage/logo.png" alt="Logo de CocinArte">
+            </a>
+        </div>
+
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú y Paquetes</a></li>
+                <li><a href="contacto.html">Nosotros y Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+   
+    <section id="banner">
+        <img src="SiteImage/banner-menu.jpg" alt="Platos de comida servidos en buffet">
+        <div class="banner-texto">
+            <h1>Menu y Paquetes</h1>
+            <p>Escoge el paquete ideal para tu evento.</p>
+            <a href="#paquetes" class="boton">Ver paquetes</a>
+        </div>
+    </section>
+
+    
+    <div id="contenedor">
+
+        
+        <main>
+
+            <!-- Tópico 1 -->
+            <section id="Paquetes">
+                <h2>Título de la sección 1</h2>
+                <p>Tenemos tres paquetes pensados para diferentes tamaños de eventos y presupuestos. Todos incluyen montaje, platos desechables de alta calidad y recogido al final de evento.</p>
+
+                <table> 
+                    <caption>Precios por persona. No incliuyen IVU.</caption>
+                    <thead>
+                        <tr>
+                            <th>Paquete</th>
+                            <th>Invitados</th>
+                            <th>Incluye</th>
+                            <th>Precio</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Basico</strong></td>
+                            <td>25 - 50</td>
+                            <td>1 entrada, 1 plato principal y refrescos</td>
+                            <td class="precio">$18</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clasico</strong></td>
+                            <td>50 - 100</td>
+                            <td>2 Entradas, 2 platos principales, 2 acompañantes, postre y refrescos</td>
+                            <td class="Precio">$28</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Premium</strong></td>
+                            <td>100 - 200</td>
+                            <td> 3 entradas, buffet completo, postres variados, estacion de bebidas y servicio de meseros</td>
+                            <td class="Precio">$40</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Tópico 2 (imagen flotante con texto alrededor) -->
+            <section id="menu">
+                <h2>Nuestro menu</h2>
+                <p>Escoge tus platos favoritos de cada categoria segun el paquete que selecciones.</p>
+
+                <div class="categorias">
+                    <div class ="categoria">
+                    <h3>Entradas</h3>
+                    <ul>
+                        <li>Alcapurrias</li>
+                        <li>Bacalaitos</li>
+                        <li>Sorullitos de Maiz</li>
+                        <li>Ensalada de la casa</li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h3>Platos principales</h3>
+                    <ul>
+                        <li>Pernil Asado</li>
+                        <li>Pechufa en Salsa Alfredo</li>
+                        <li>Pollo al Horno</li>
+                        <li>Pasta 5 quesos</li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h3>Acompañantes</h3>   
+                    <ul>
+                        <li>Arroz con gandules</li>
+                        <li>Arroz blanco y habichuelas</li>
+                        <li>Tostones</li>
+                        <li>Ensalada de papa</li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h3>Postres</h3>
+                    <ul>
+                        <li>Flan de queso</li>
+                        <li>Tembleque</li>
+                        <li>Arroz con dulce</li>
+                        <li>Bizcocho de la casa</li>
+                    </ul>
+                 </div>
+             </div>       
+        </section>
+
+
+        <section id="galeria">
+           <h2>Galeria de fotos</h2>
+           <div class="galeria">
+                <figure>
+                    <img src="SiteImage/plato1.jpg" alt="Pernil asado servido en bandeja">
+                    <figcaption>Pernil asado</figcaption>
+                </figure>
+                <figure>
+                    <img src="SiteImage/plato2.jpg" alt="Arroz con gandules en caldero">
+                    <figcaption>Arroz con gandules</figcaption>
+                </figure>
+                <figure>
+                    <img src="SiteImage/plato3.jpg" alt="Alcapurrias recien fritas">
+                    <figcaption>Alcapurrias</figcaption>
+                </figure>
+                <figure>
+                    <img src="SiteImage/plato4.jpg" alt="Flan de queso con caramelo">
+                    <figcaption>Flan de queso</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>¿Necesitas algo?</h2> 
+            <p>Armamos un menu a la medida de tu evento y tu presupuesto.</p>
+            <a href="contacto.html" class="boton">Pide una cotizacion a tu medida</a>
+        </section>
+
+
+        </main>
+
+        <!-- ===== BARRA LATERAL ===== -->
+        <aside>
+            <h3>¿Como reservar</h3>
+            <ol>
+                <li>Escoge tu paquete</li>
+                <li>Selecciona tus platos</li>
+                <li>Llena el formulario de cotizacion</li>
+                <li>Confirma con un deposito</li>
+            </ol>
+
+            <h3>Importante</h3>
+            <p>Reserva con almenos<strong> 3 semanas </strong>de anticipacion. Para bodas, recomendamos de 2 a 3 meses.</p>
+
+        </aside>
+
+    </div>  
+
+    <!-- ===== PIE DE PÁGINA (igual en todas las páginas) ===== -->
+    <footer>
+        <p>Teléfono: 787-656-9309 | Email: <a href="mailto:cocinarte@gmail.com">cocinarte@gmail.com</a></p>
+        <p>Síguenos en
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p> 
+        <p>&copy; 2026 CocinArte. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

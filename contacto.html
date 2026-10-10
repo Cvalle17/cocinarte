@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ===== INFORMACIÓN DE LA PÁGINA (no se ve en pantalla) ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce la historia de CocinArte y solicita una cotización para tu evento en Puerto Rico.">
+    <title>CocinArte | Nosotros y Contacto</title>
+
+    <!-- Conexión con la hoja de estilos -->
+    <link rel="stylesheet" href="SiteStyle/global.css">
+</head>
+<body>
+
+    <!-- ===== ENCABEZADO: logo y barra de navegación (igual en todas las páginas) ===== -->
+    <header>
+
+        <!-- Logo del sitio -->
+        <div id="logo">
+            <a href="index.html">
+                <img src="SiteImage/logo.png" alt="Logo de CocinArte">
+            </a>
+        </div>
+
+        <!-- Barra de navegación entre páginas -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú y Paquetes</a></li>
+                <li><a href="contacto.html" class="activo">Nosotros y Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ===== BANNER ===== -->
+    <section id="banner">
+        <img src="SiteImage/banner-contacto.jpg" alt="Equipo de cocina preparando platos para un evento">
+        <div class="banner-texto">
+            <h1>Nosotros y Contacto</h1>
+            <p>Conoce quiénes somos y cotiza tu próximo evento.</p>
+            <a href="#cotizacion" class="boton">Ir al formulario</a>
+        </div>
+    </section>
+
+    <!-- ===== CONTENEDOR: contenido principal + barra lateral ===== -->
+    <div id="contenedor">
+
+        <!-- ===== CONTENIDO PRINCIPAL ===== -->
+        <main>
+
+            <!-- Tópico 1: Biografía (imagen flotante con texto alrededor) -->
+            <section id="historia">
+                <h2>Nuestra historia</h2>
+
+                <figure class="flotar">
+                    <img src="SiteImage/equipo.jpg" alt="Equipo de trabajo de CocinArte">
+                    <figcaption>El equipo de CocinArte, listo para tu evento.</figcaption>
+                </figure>
+
+                <p>CocinArte nació en Carolina, Puerto Rico, con una idea sencilla: llevar el sabor de la comida casera boricua a los momentos más importantes de nuestros clientes. Lo que comenzó cocinando para fiestas de familiares y amigos se convirtió en un servicio de catering para bodas, cumpleaños y eventos corporativos en toda el área metropolitana.</p>
+
+                <p>Hoy contamos con un equipo de cocineros y meseros comprometidos con la calidad, la puntualidad y el buen servicio. Cada evento lo tratamos como si fuera nuestro, desde el primer contacto hasta el último plato servido.</p>
+            </section>
+
+            <!-- Tópico 2: Misión, visión y valores -->
+            <section id="valores">
+                <h2>Lo que nos mueve</h2>
+                <div class="valores">
+                    <div class="valor">
+                        <h3>Misión</h3>
+                        <p>Ofrecer comida de calidad y un servicio puntual y profesional que haga de cada evento un momento inolvidable.</p>
+                    </div>
+                    <div class="valor">
+                        <h3>Visión</h3>
+                        <p>Ser el servicio de catering preferido en Puerto Rico para celebraciones familiares y empresariales.</p>
+                    </div>
+                    <div class="valor">
+                        <h3>Valores</h3>
+                        <ul>
+                            <li>Calidad</li>
+                            <li>Puntualidad</li>
+                            <li>Higiene</li>
+                            <li>Servicio al cliente</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tópico 3: Formulario de cotización -->
+            <section id="cotizacion">
+                <h2>Cotiza tu evento</h2>
+                <p>Completa el formulario y te enviaremos una cotización en un plazo de 48 horas. Los campos con * son obligatorios.</p>
+
+                <form class="formulario" action="mailto:info@cocinarte.com" method="post" enctype="text/plain">
+
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. María Rivera" required>
+
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="787-000-0000" required>
+
+                    <label for="evento">Tipo de evento *</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="boda">Boda</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="corporativo">Evento corporativo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="fecha">Fecha del evento *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="invitados">Cantidad de invitados *</label>
+                    <input type="number" id="invitados" name="invitados" min="25" max="200" placeholder="Entre 25 y 200" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más sobre tu evento: lugar, paquete de interés, platos favoritos..."></textarea>
+
+                    <button type="submit" class="boton">Enviar solicitud</button>
+
+                </form>
+            </section>
+
+        </main>
+
+        <!-- ===== BARRA LATERAL ===== -->
+        <aside>
+            <h3>Contáctanos</h3>
+            <p><strong>Dirección:</strong><br>Carolina, Puerto Rico</p>
+            <p><strong>Teléfono:</strong><br>787-656-9309</p>
+            <p><strong>Email:</strong><br>CocinArte@gmail.com</p>
+            <p><a href="https://www.google.com/maps/place/Carolina,+Puerto+Rico" target="_blank">Ver ubicación en Google Maps</a></p>
+
+            <h3>Horario de atención</h3>
+            <p>Lunes a sábado<br>9:00 a.m. – 6:00 p.m.</p>
+        </aside>
+
+    </div>
+
+    <!-- ===== PIE DE PÁGINA (igual en todas las páginas) ===== -->
+    <footer>
+        <p>Teléfono: 787-656-9309 | Email: CocinArte@gmail.com</p>
+        <p>Síguenos en
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p>
+        <p>&copy; 2026 CocinArte. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
