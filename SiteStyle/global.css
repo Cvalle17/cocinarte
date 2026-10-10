@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #3b2a20;
+    line-height: 1.6;
+}
+h2 {
+    color: #C0562F;
+    border-bottom: 3px solid #E8A33D;
+    padding-bottom: 5px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #3B2A20;
+}
+#logo img {
+    height: 70px;
+    display: block;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+nav a {
+    color: #FFF8F0;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+nav a:hover {
+    background-color: #C0562F;
+}
+#banner {
+    position: relative;
+}
+#banner img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    display: block;
+}
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(59, 42, 72, 0.75);
+    color: #FFFFFF;
+    padding: 25px 40px;
+    border-radius: 12px;
+}
+.banner-texto h1 {
+    margin:0 0 10px;
+    font-size: 2.5em;
+
+}
+.boton {
+    display: inline-block;
+    background-color: #C0562F;
+    color: #FFFFFF;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.boton:hover {
+    background-color: #E8A33D;
+    color:#3B2A20;
+}
+#contenedor {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+main {
+    flex: 3;
+}
+main a {
+    color:#C0562F;
+    font-weight: bold;
+
+}
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+.tarjetas figure {
+    flex: 1;
+    margin: 0;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0,  0.15);
+    text-align: center;
+}
+.tarjetas img {
+
+    width: 100%;
+    height: 180%;
+    object-fit: cover;
+    display: block;
+
+}
+.tarjetas figcaption {
+    padding: 10px;
+    font-weight: bold;
+}
+#por-que {
+    overflow: auto;
+}
+.flotar {
+    float: right;
+    width: 280px;
+    margin: 0 0 15px 20px;
+
+}
+.flotar img {
+    width: 100%;
+    border-radius: 12px;
+}
+.flotar figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+
+}
+aside {
+    flex: 1;
+    align-self: flex-start;
+    background-color: #FFFFFF;
+    border: 2px solid #E8A33D;
+    border-radius: 12px;
+    padding: 20px;
+}
+aside h3 {
+    color: #C0562F;
+    margin-top: 0;
+}
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #C0562F;
+    margin: 15px 0 0;
+    padding-left: 12px;
+}
+footer {
+    background-color: #3B2A20;
+    color: #FFF8F0;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color:#E8A33D;
+
+}
+nav a.activo {
+    background-color: #C0562F;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+}
+caption {
+    caption-side: bottom;
+    font-size: 0.9em;
+    font-style: italic;
+    padding-top: 8px;
+}
+th {
+    background-color: #3B2A20;
+    color: #FFF8F0;
+    text-align: left;
+    padding: 12px;
+}   
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ead96c;
+}
+tbody tr:nth-child(even) {
+    background-color: #fff3e6;
+}
+tbody tr:hover {
+    background-color: #FBE3CC;
+}
+.precio {
+    font-weight: bold;
+    color: #C0562F;
+    font-size: 1.2em;
+}
+.categorias {
+    display: flex;
+    gap: 15px;
+}
+.categoria {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-top: 5px solid #C0562F;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.categoria h3 {
+    color: #C0562F;
+    margin-top: 0;
+}
+categoria ul {
+    padding-left: 18px;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.galeria figure {   
+    margin: 0;
+    text-align: center;
+}
+.galeria img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.galeria figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 5px;
+}
+.cta {
+    text-align: center;
+    background-color: #3B2A20;
+    color: #FFF8F0;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+.cta h2 {
+    color: #E8A33D;
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.valor {
+    background-color: #FFFFFF;
+    border-top: 5px solid #E8A33D;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.valor h3 {
+    color: #C0562F;
+    margin-top: 0;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #EAD9C6;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: #C0562F;
+    outline: none;
+}
+
+
+.formulario button {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+
+@media (max-width: 768px) {          
+
+    header,
+    #contenedor,
+    .tarjetas,
+    .categorias {                      
+        flex-direction: column;
+    }                                
+
+    .flotar {                        
+        float: none;
+        width: 100%;
+        margin: 0 0 15px;
+    }   
+    .galeria,
+    .valores {
+        grid-template-columns: 1fr;
+    }
+    
+}
